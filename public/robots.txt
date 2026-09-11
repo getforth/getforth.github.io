@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://getforth.github.io/sitemap.xml
