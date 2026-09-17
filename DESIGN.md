@@ -162,6 +162,9 @@ Native details and summary elements supply the disclosure behavior. Rows have ge
 
 All interactive elements use visible focus outlines (3px, offset 6px): darker amber on paper and the gold token on dark surfaces. The skip link becomes visible on keyboard focus. There are no form inputs, chips, or generic cards on this site.
 
+### Download Handoff
+`public/download/index.html` uses the same midnight, cream, Fraunces, and system-sans identity for a single browser-handoff instruction. Content is centered in a 400px measure with 24px mobile gutters. The existing app icon is 80px with an 18px radius scaled to that size; the heading spans 38–52px, matching the existing FAQ's maximum. Supporting text is 16px, with availability and the homepage link at 14px. Automatic App Store navigation retains a cream manual action as a fallback. TikTok visitors see the browser-menu instruction; Android visitors see iPhone availability. Scoped layout rules live in `public/download/download.css`.
+
 ## Do's and Don'ts
 
 ### Do:

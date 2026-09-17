@@ -1,0 +1,12 @@
+.download-page { min-height: 100svh; display: grid; place-items: center; padding: 64px 24px; color: var(--cream); background: var(--ink); color-scheme: dark; }
+.download-content { width: 100%; max-width: 400px; text-align: center; }
+.download-icon { margin: 0 auto 28px; border-radius: 18px; }
+.download-content h1 { font-size: clamp(38px, 10vw, 52px); line-height: 1.1; }
+.download-content p { margin-top: 24px; color: var(--mist); text-wrap: pretty; }
+.download-content strong { color: var(--cream); font-weight: 600; }
+.download-content .button { margin-top: 30px; }
+.download-content .button[hidden] { display: none; }
+.download-content .availability { margin-top: 24px; font-size: 14px; }
+.download-home { display: inline-block; margin-top: 32px; padding-block: 12px; font-size: 14px; color: var(--mist); }
+.download-home:hover { color: var(--cream); }
+.download-page a:focus-visible { outline-color: var(--gold); }
