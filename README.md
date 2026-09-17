@@ -8,6 +8,8 @@ Plain HTML, CSS, and JavaScript. No build step, backend, package installation, a
 
 Use **https://getforth.github.io/download/** in TikTok's website field. On iPhone inside TikTok, it asks visitors to choose **Open in browser**. When the same URL opens in Safari or Chrome, it automatically navigates to Forth's HTTPS App Store listing. A manual download link remains if automatic navigation is blocked or JavaScript is unavailable. Android visitors see an iPhone availability message without an automatic redirect.
 
+The TikTok helper shows a gold arrow toward the top-right menu and two illustrated steps. The arrow moves three times on arrival and stays still for visitors who enable Reduced Motion.
+
 The homepage's download buttons also use this helper when TikTok is detected. The dedicated bio URL is preferred because the handoff does not depend on cookies, browser storage, or TikTok preserving a URL changed by JavaScript. Browser detection is best-effort; verify the actual TikTok-to-browser handoff on an iPhone after publishing.
 
 ## Preview

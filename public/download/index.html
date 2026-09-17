@@ -10,8 +10,8 @@
     <link rel="icon" type="image/png" href="../assets/favicon.png">
     <link rel="apple-touch-icon" href="../assets/icon.jpg">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="./download.css">
-    <script src="../site.js?v=20260917-download" defer></script>
+    <link rel="stylesheet" href="./download.css?v=20260917-guide">
+    <script src="../site.js?v=20260917-guide" defer></script>
   </head>
   <body class="download-page">
     <main id="download-page" class="download-content">
@@ -19,6 +19,26 @@
       <h1>Download Forth</h1>
       <p id="download-status" role="status">Get Forth for iPhone on the App Store.</p>
       <p id="browser-help">In TikTok? Tap the three dots at the top, then choose <strong>Open in browser</strong>.</p>
+      <div id="browser-guide" hidden>
+        <svg class="menu-arrow" viewBox="0 0 144 168" aria-hidden="true"><path d="M12 150C89 144 116 92 116 12M97 32l19-20 18 20"/></svg>
+        <ol class="browser-steps" aria-label="Open Forth in the App Store" role="list">
+          <li>
+            <span class="step-number" aria-hidden="true">1</span>
+            <div>
+              <span class="step-title">Tap the three dots <svg class="menu-dots" viewBox="0 0 32 24" aria-hidden="true"><circle cx="6" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="26" cy="12" r="2"/></svg></span>
+              <p>At the top right of TikTok.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">2</span>
+            <div>
+              <span class="step-label">In the menu, choose</span>
+              <strong class="browser-option"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7m0-7L10 14M10 4H4a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-6"/></svg>Open in browser</strong>
+            </div>
+          </li>
+        </ol>
+        <p class="browser-next">The App Store will open automatically.</p>
+      </div>
       <a id="app-store-link" class="button button-light" href="https://apps.apple.com/app/id6796908928">Download for iPhone <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       <span class="availability">For iPhone · Subscription required</span>
       <a class="download-home" href="../">About Forth</a>

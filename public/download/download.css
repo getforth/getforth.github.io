@@ -10,3 +10,30 @@
 .download-home { display: inline-block; margin-top: 32px; padding-block: 12px; font-size: 14px; color: var(--mist); }
 .download-home:hover { color: var(--cream); }
 .download-page a:focus-visible { outline-color: var(--gold); }
+
+.download-page.needs-browser { position: relative; padding-top: 152px; padding-bottom: 32px; }
+.needs-browser .download-icon { width: 64px; height: 64px; margin-bottom: 20px; }
+.needs-browser .download-home { margin-top: 16px; }
+.download-content p[hidden], #browser-guide[hidden] { display: none; }
+.menu-arrow { position: absolute; top: 12px; right: max(12px, env(safe-area-inset-right)); width: 120px; height: 140px; color: var(--gold); stroke-width: 3; pointer-events: none; }
+.browser-steps { margin: 32px 0 0; padding: 0; list-style: none; text-align: left; }
+.browser-steps li { display: flex; align-items: flex-start; gap: 16px; }
+.browser-steps li + li { margin-top: 28px; }
+.step-number { flex: none; width: 28px; color: var(--gold); font-size: 22px; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.step-title { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 600; }
+.menu-dots { width: 32px; height: 24px; fill: currentColor; stroke: none; }
+.download-content .browser-steps p { margin-top: 4px; font-size: 14px; }
+.step-label { display: block; color: var(--mist); font-size: 14px; }
+.browser-option { display: flex; align-items: center; gap: 12px; margin-top: 7px; font-size: 22px; line-height: 1.4; }
+.browser-option svg { width: 22px; height: 22px; color: var(--gold); }
+.download-content .browser-next { margin-top: 28px; font-size: 16px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .menu-arrow { animation: point-to-menu 1.5s var(--ease) 3; }
+  @keyframes point-to-menu { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-8px); } }
+}
+@media (max-width: 360px) {
+  .browser-steps li { gap: 12px; }
+  .step-title { gap: 8px; font-size: 16px; }
+  .browser-option { font-size: 20px; }
+}

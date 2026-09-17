@@ -163,7 +163,9 @@ Native details and summary elements supply the disclosure behavior. Rows have ge
 All interactive elements use visible focus outlines (3px, offset 6px): darker amber on paper and the gold token on dark surfaces. The skip link becomes visible on keyboard focus. There are no form inputs, chips, or generic cards on this site.
 
 ### Download Handoff
-`public/download/index.html` uses the same midnight, cream, Fraunces, and system-sans identity for a single browser-handoff instruction. Content is centered in a 400px measure with 24px mobile gutters. The existing app icon is 80px with an 18px radius scaled to that size; the heading spans 38–52px, matching the existing FAQ's maximum. Supporting text is 16px, with availability and the homepage link at 14px. Automatic App Store navigation retains a cream manual action as a fallback. TikTok visitors see the browser-menu instruction; Android visitors see iPhone availability. Scoped layout rules live in `public/download/download.css`.
+`public/download/index.html` uses the same midnight, cream, Fraunces, and system-sans identity. Content is centered in a 400px measure with 24px mobile gutters. The existing app icon is 80px with an 18px radius scaled to that size (64px in the browser guide); the heading spans 38–52px, matching the existing FAQ's maximum. Supporting text is 16px, with availability and the homepage link at 14px. Automatic App Store navigation retains a cream manual action as a fallback. Android visitors see iPhone availability. Scoped layout rules live in `public/download/download.css`.
+
+TikTok visitors see two numbered steps with a three-dot menu symbol and an external-browser icon. Instruction labels use 18px and the exact menu option uses 22px, reduced to 16px and 20px at narrow widths. Numbers and directional icons use amber. A curved arrow at the top-right edge points toward TikTok's toolbar, outside the webpage. It nudges upward three times over 4.5 seconds, then rests; reduced motion keeps it stationary. The arrow does not intercept taps. The sequence is present immediately, without an entrance delay or a simulated clickable menu.
 
 ## Do's and Don'ts
 

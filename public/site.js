@@ -42,7 +42,9 @@ if (downloadPage) {
     status.textContent = 'Forth is currently available for iPhone.';
     appStoreLink.textContent = 'View on the App Store';
   } else if (isTikTok || isIOSWebView) {
-    status.textContent = 'Tap the three dots at the top, then choose Open in browser to continue to the App Store.';
+    status.hidden = true;
+    document.getElementById('browser-guide').hidden = false;
+    document.body.classList.add('needs-browser');
     appStoreLink.hidden = true;
   } else {
     status.textContent = 'Opening the App Store. If it doesn’t open, tap below.';
